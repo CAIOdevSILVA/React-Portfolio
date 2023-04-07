@@ -4,9 +4,8 @@ import {
   About,
   Contact,
   Tech,
-  Feedbacks,
+  SocialMedia,
   Works,
-  Experience,
   Hero,
   Navbar,
   StarsCanvas,
@@ -21,10 +20,9 @@ function App() {
           <Hero />
         </div>
         <About />
-        <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
+        <SocialMedia />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

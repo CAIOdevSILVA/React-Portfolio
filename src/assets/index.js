@@ -20,6 +20,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import sass from "./tech/sass.png"
+import styledComponents from "./tech/styledComponents.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -29,6 +31,11 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+
+import instagram from "./Socialmedia/instagram.png"
+import linkedin from "./Socialmedia/linkedin.png"
+import tiktok from "./Socialmedia/tiktok.png"
 
 export {
   logo,
@@ -50,6 +57,8 @@ export {
   reactjs,
   redux,
   tailwind,
+  sass,
+  styledComponents,
   typescript,
   threejs,
   meta,
@@ -59,4 +68,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  linkedin,
+  instagram,
+  tiktok
 };
