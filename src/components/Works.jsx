@@ -2,12 +2,12 @@ import Tilt from "react-parallax-tilt"
 import { motion } from "framer-motion"
 
 import { styles } from '../styles'
-import { github } from "../assets"
+import { github, externalLink } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { projects } from "../constants/contants"
 import { fadeIn, textVariant } from "../utils/motion"
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, website_link }) => {
   return(
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -25,13 +25,22 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             alt={name} 
             className="w-full h-full object-cover rounded-2xl"
           />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex gap-1 justify-end m-3 card-img_hover">
             <div onClick={() => window.open(source_code_link, "_blanck")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img 
                 src={github}
                 alt="GitHub"
+                className="w-1/2 h-1/2 object-contain"
+              />
+            </div>
+            <div onClick={() => window.open(website_link, "_blanck")}
+              className="bg-zinc-100 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img 
+                src={externalLink}
+                alt={`Link do Site ${name}`}
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>

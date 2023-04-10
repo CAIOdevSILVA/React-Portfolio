@@ -7,9 +7,6 @@ import { EarthCanvas } from "./canvas"
 import { SectionWrapper } from "../hoc"
 import { slideIn } from '../utils/motion'
 
-//q7s0CjZcUeofhnVGY
-//template_c4ujo6s
-//service_x0b5w07
 
 const Contact = () => {
   const formRef = useRef()
@@ -29,8 +26,8 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs.send(
-      'service_x0b5w07',
-      'template_c4ujo6s',
+      `${import.meta.env.VITE_SERVICE_EMAILJS}`,
+      `${import.meta.env.VITE_TEMPLATE_EMAILJS_CODE}`,
       {
         from_name: form.name,
         to_name: "Caio Silva",
@@ -38,7 +35,7 @@ const Contact = () => {
         to_email: "caiossantosp5563@gmail.com",
         message: form.message
       },
-      'q7s0CjZcUeofhnVGY'
+      `${import.meta.env.VITE_EMAILJS_KEY}`
     )
     .then(() => {
       setLoading(false)
@@ -102,7 +99,7 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder="Oque você quer falar?"
+              placeholder="Qual a sua mensagem ?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>

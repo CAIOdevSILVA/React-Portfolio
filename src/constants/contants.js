@@ -14,17 +14,15 @@ import {
   styledComponents,
   git,
   figma,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  shareme,
   carrent,
   jobit,
   tripguide,
   github,
   linkedin,
   instagram,
-  tiktok
+  tiktok,
+  youtube
 } from "../assets";
 
 export const navLinks = [
@@ -121,6 +119,11 @@ const socialMedia = [
   icon: linkedin
  },
  {
+  media: "Youtube",
+  link: "https://youtube.com",
+  icon: youtube
+ },
+ {
   media: "Instagram",
   link: "https://instagram.com",
   icon: instagram
@@ -133,6 +136,28 @@ const socialMedia = [
 ];
 
 const projects = [
+  {
+    name: "ShareME",
+    description:
+      "ShareME é um projeto inspirado no Pinterest e com ele podemos compartilhar imagens, curtir e comentar assim como em qualquer outra rede social. Todas as informações são armazenadas no CMS SANITY isso permite que usuários, imagens, curtidas e comentários sejam salvos e atualizados em tempo real. ShareMe é uma incrível rede social não deixe de criar sua conta!",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sanity",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      }
+    ],
+    image: shareme,
+    source_code_link: "https://github.com/CAIOdevSILVA/ShareME-Frontend",
+    website_link: "https://shareme-caio-silva.netlify.app/login"
+  },
   {
     name: "Car Rent",
     description:
@@ -153,6 +178,7 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/",
+    website_link: "/"
   },
   {
     name: "Job IT",
@@ -174,6 +200,7 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/",
+    website_link: "/"
   },
   {
     name: "Trip Guide",
@@ -195,7 +222,9 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/",
+    website_link: "/"
   },
+  
 ];
 
 export { services, technologies, socialMedia, projects };
