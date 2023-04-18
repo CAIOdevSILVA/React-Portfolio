@@ -1,7 +1,6 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -15,14 +14,11 @@ import {
   git,
   figma,
   shareme,
-  carrent,
-  jobit,
-  tripguide,
+  airbnb,
+  lords,
   github,
   linkedin,
   instagram,
-  tiktok,
-  youtube
 } from "../assets";
 
 export const navLinks = [
@@ -53,10 +49,10 @@ const services = [
     title: "React Developer",
     icon: backend,
   },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+  // {
+  //   title: "Content Creator",
+  //   icon: creator,
+  // },
 ];
 
 const technologies = [
@@ -118,24 +114,77 @@ const socialMedia = [
   link: "https://www.linkedin.com/in/caio-silva-b12bb61a9/",
   icon: linkedin
  },
- {
-  media: "Youtube",
-  link: "https://youtube.com",
-  icon: youtube
- },
+//  {
+//   media: "Youtube",
+//   link: "https://youtube.com",
+//   icon: youtube
+//  },
  {
   media: "Instagram",
   link: "https://instagram.com",
   icon: instagram
  },
- {
-  media: "TikTok",
-  link: "https://tiktok.com",
-  icon: tiktok
- },
+//  {
+//   media: "TikTok",
+//   link: "https://tiktok.com",
+//   icon: tiktok
+//  },
 ];
 
 const projects = [
+  {
+    name: "Clone do Airbnb (Em desenvolvimento) ",
+    description:
+      "Esta aplicação é um clone do famoso site airbnb, e com ela podemos imitar algumas das principais funcionalidades do site original, como criar contas e fazer login utilizando email, google ou github tudo isso com as facilidades que o next-auth nos oferece. Além de simular a funcionalidade de fazer reservas. Todas as informações ficam salvas no Banco de dados MongoDB e com isso podem ser diponibilizadas em tempo real para o usuário final de forma rápida e segura.",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      }
+    ],
+    image: airbnb,
+    source_code_link: "https://github.com/CAIOdevSILVA/Clone-Airbnb",
+    website_link: "/"
+  },
+  {
+    name: "Lord of the Novels (Em desenvolvimento)",
+    description:
+      "Lord os the Novels é projeto de uma plataforma de leitura seja de livros, WebNovels ou Novels. Nele podemos criar conta, curtir, comentar e salvar as obras preferidas. Além disso, todo o controle de conteúdos é feito pelo CMS Sanity, por isso, todas informações são salvas, armazenadas e disponibilizadas ao usuário final de maneira rápida e segura. Se você gosta de obras digitais fique de à vontade testar o site e conferir os exemplos.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sanity",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: lords,
+    source_code_link: "https://github.com/CAIOdevSILVA/Lord-Of-The-Novels",
+    website_link: "/"
+  },
+
   {
     name: "ShareME",
     description:
@@ -157,72 +206,6 @@ const projects = [
     image: shareme,
     source_code_link: "https://github.com/CAIOdevSILVA/ShareME-Frontend",
     website_link: "https://shareme-caio-silva.netlify.app/login"
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-    website_link: "/"
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-    website_link: "/"
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-    website_link: "/"
   },
   
 ];

@@ -24,15 +24,12 @@ import threejs from "./tech/threejs.svg";
 import sass from "./tech/sass.png"
 import styledComponents from "./tech/styledComponents.png"
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import lords from "./Lord_Image.png"
 import shareme from "./foto-ShareME.png"
+import airbnb from "./airbnb.png"
+
 
 
 import instagram from "./Socialmedia/instagram.png"
@@ -65,13 +62,9 @@ export {
   styledComponents,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
-  jobit,
-  tripguide,
+  airbnb,
+  lords,
   shareme,
   linkedin,
   instagram,
