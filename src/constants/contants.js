@@ -121,7 +121,7 @@ const socialMedia = [
 //  },
  {
   media: "Instagram",
-  link: "https://instagram.com",
+  link: "https://www.instagram.com/dev_caiosilva/",
   icon: instagram
  },
 //  {
